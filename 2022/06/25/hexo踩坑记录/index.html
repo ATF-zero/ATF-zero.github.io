@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>hexo踩坑记录 | black_zero&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="YAMLExceptionYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1) 在冒号之后加个空格就好了">
+  <meta name="description" content="YAMLExceptionYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1) 在冒号之后加个空格就好了 unsafe repository这里的报错属于git里的内容了 fatal: unsafe repository (‘D:&#x2F;Projec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo踩坑记录">
 <meta property="og:url" content="http://example.com/2022/06/25/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="black_zero&#39;s blog">
-<meta property="og:description" content="YAMLExceptionYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1) 在冒号之后加个空格就好了">
+<meta property="og:description" content="YAMLExceptionYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1) 在冒号之后加个空格就好了 unsafe repository这里的报错属于git里的内容了 fatal: unsafe repository (‘D:&#x2F;Projec">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-25T15:48:39.000Z">
-<meta property="article:modified_time" content="2022-06-25T15:50:29.474Z">
+<meta property="article:modified_time" content="2022-06-25T15:57:26.352Z">
 <meta property="article:author" content="ATF-zero">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -177,6 +177,12 @@
       
         <h2 id="YAMLException"><a href="#YAMLException" class="headerlink" title="YAMLException"></a>YAMLException</h2><p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1)</p>
 <p>在冒号之后加个空格就好了</p>
+<h2 id="unsafe-repository"><a href="#unsafe-repository" class="headerlink" title="unsafe repository"></a>unsafe repository</h2><p>这里的报错属于git里的内容了</p>
+<p>fatal: unsafe repository (‘D:&#x2F;Project&#x2F;HexoBlog&#x2F;.deploy_git’ is owned by someone else)<br>To add an exception for this directory, call:</p>
+<pre><code>    git config --global --add safe.directory D:/Project/HexoBlog/.deploy_git
+</code></pre>
+<p>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (D:\Project\HexoBlog\node_modules\hexo-util\lib\spawn.js:51:21)<br>      at ChildProcess.emit (node:events:527:28)<br>      at ChildProcess.cp.emit (D:\Project\HexoBlog\node_modules\cross-spawn\lib\enoent.js:34:29)<br>      at Process.ChildProcess._handle.onexit (node:internal&#x2F;child_process:291:12) {<br>    code: 128<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a></p>
+<p>解决方法也很简单，直接输入上面的指令就可以了，将文件添加到safe.directory中，似乎还有一种方法，就是将文件的所有权转移到自己的账户上。</p>
 
       
 

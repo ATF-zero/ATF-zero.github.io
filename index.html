@@ -174,6 +174,12 @@
       
         <h2 id="YAMLException"><a href="#YAMLException" class="headerlink" title="YAMLException"></a>YAMLException</h2><p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1)</p>
 <p>在冒号之后加个空格就好了</p>
+<h2 id="unsafe-repository"><a href="#unsafe-repository" class="headerlink" title="unsafe repository"></a>unsafe repository</h2><p>这里的报错属于git里的内容了</p>
+<p>fatal: unsafe repository (‘D:&#x2F;Project&#x2F;HexoBlog&#x2F;.deploy_git’ is owned by someone else)<br>To add an exception for this directory, call:</p>
+<pre><code>    git config --global --add safe.directory D:/Project/HexoBlog/.deploy_git
+</code></pre>
+<p>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (D:\Project\HexoBlog\node_modules\hexo-util\lib\spawn.js:51:21)<br>      at ChildProcess.emit (node:events:527:28)<br>      at ChildProcess.cp.emit (D:\Project\HexoBlog\node_modules\cross-spawn\lib\enoent.js:34:29)<br>      at Process.ChildProcess._handle.onexit (node:internal&#x2F;child_process:291:12) {<br>    code: 128<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a></p>
+<p>解决方法也很简单，直接输入上面的指令就可以了，将文件添加到safe.directory中，似乎还有一种方法，就是将文件的所有权转移到自己的账户上。</p>
 
       
 
