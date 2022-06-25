@@ -152,6 +152,161 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo踩坑记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/06/25/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">hexo踩坑记录</a>
+    </h1>
+  
+
+        
+        <a href="/2022/06/25/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+  	<time datetime="2022-06-25T15:48:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="YAMLException"><a href="#YAMLException" class="headerlink" title="YAMLException"></a>YAMLException</h2><p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (4:1)</p>
+<p>在冒号之后加个空格就好了</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/06/25/hexo%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Ubuntu环境配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/06/25/Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Ubuntu环境配置</a>
+    </h1>
+  
+
+        
+        <a href="/2022/06/25/Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2022-06-25T15:04:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="nginx的安装与卸载"><a href="#nginx的安装与卸载" class="headerlink" title="nginx的安装与卸载"></a>nginx的安装与卸载</h2><h5 id="nginx的卸载"><a href="#nginx的卸载" class="headerlink" title="nginx的卸载"></a>nginx的卸载</h5><p>sudo apt-get remove nginx nginx-common<br>sudo apt-get purge nginx nginx-common<br>sudo apt-get autoremove<br>sudo apt-get remove nginx-full nginx-common</p>
+<p>然而这样并不能完全卸载，还有一部分残留文件如&#x2F;etc下需要手动删除</p>
+<h5 id="nginx的安装"><a href="#nginx的安装" class="headerlink" title="nginx的安装"></a>nginx的安装</h5><h6 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1.安装依赖"></a>1.安装依赖</h6><p>两个依赖在centos中为pcre-devel和openssl-dev</p>
+<p>在ubuntu中为libpcre3-dev和libssl-dev</p>
+<p>sudo apt-get install libpcre3-dev</p>
+<p>sudo apt-get install openssl<br>sudo apt-get install libssl-dev</p>
+<h6 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2.安装nginx"></a>2.安装nginx</h6><p>获取安装包<a target="_blank" rel="noopener" href="http://nginx.org/en/download.html%E6%94%BE%E5%88%B0/root%E7%9B%AE%E5%BD%95%E4%B8%8B">http://nginx.org/en/download.html放到/root目录下</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/06/25/Ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-搭建hexo博客踩坑记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -235,7 +390,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="nginx日志不更新"><a href="#nginx日志不更新" class="headerlink" title="nginx日志不更新"></a>nginx日志不更新</h2><p>不知道哪里出了问题，即使配置文件里面的日志相关选项已经去掉了注释，但不管是access还是error日志都不更新，通过重装解决。</p>
+<h2 id="访问文件：Permission-denied"><a href="#访问文件：Permission-denied" class="headerlink" title="访问文件：Permission denied"></a>访问文件：Permission denied</h2><p>尝试修改文件权限（chmod 777 指定文件或者目录），但是依旧权限不足。</p>
+<p>最后在nginx.conf中将user改为root解决</p>
+<h2 id="配置文件nginx-conf"><a href="#配置文件nginx-conf" class="headerlink" title="配置文件nginx.conf"></a>配置文件nginx.conf</h2><p>如果只是要做到访问文件内容的话</p>
+<p>location &#x3D;&#x2F;data.json {</p>
+<p>​      root  &#x2F;root&#x2F;getE;</p>
+<p>​      index  data.json;</p>
+<p>​    }</p>
+<p>其中index一行可以去掉，只需要root确定文件目录，然后location后接文件名</p>
+<p>.json和.txt，不需要再更改配置文件，都可以直接访问，暂时不确定.py是否可以查看内容，而不是一访问直接下载。</p>
+
       
 
       
@@ -243,6 +408,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">nginx</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -443,6 +619,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">ubuntu</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
