@@ -152,6 +152,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-mysql踩坑记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/07/30/mysql%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">mysql踩坑记录</a>
+    </h1>
+  
+
+        
+        <a href="/2022/07/30/mysql%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+  	<time datetime="2022-07-30T14:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一-jdbc链接mysql数据库出错"><a href="#一-jdbc链接mysql数据库出错" class="headerlink" title="一. jdbc链接mysql数据库出错"></a>一. jdbc链接mysql数据库出错</h2><p>1.Unknown initial character set index ‘255‘ received from server</p>
+<p>在数据库连接后面添加以下字段即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?useUnicode=true&amp;characterEncoding=utf8</span><br></pre></td></tr></table></figure>
+
+<p>似乎也可以合适的jar包，但是我没有测试</p>
+<p>2.Client does not support authentication protocol requested by server</p>
+<p>登录数据库出错，可以通过更改mysql的加密方法来解决，选择第二种即可</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/07/30/mysql%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JavaScript学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -347,7 +427,7 @@
 <p>解决方法也很简单，直接输入上面的指令就可以了，将文件添加到safe.directory中，似乎还有一种方法，就是将文件的所有权转移到自己的账户上。</p>
 <h2 id="添加多个标签-x2F-tags"><a href="#添加多个标签-x2F-tags" class="headerlink" title="添加多个标签&#x2F;tags"></a>添加多个标签&#x2F;tags</h2><p><img src="/.com//1.jpg" alt="添加多个标签"></p>
 <p>如图即可给文章添加多个标签</p>
-
+<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2>
       
 
       
@@ -752,6 +832,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
